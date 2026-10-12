@@ -1,34 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <title>osu!tracker</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
 
-<head>
-  <title>osu!tracker</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-        text-align:center;
-    }
-  </style>
-</head>
+    <body>
+        <h1>(WIP) Overlays:</h1>
+        <p>This is a very basic implementation of web based OBS overlays. Still heavy wip.</p>
+        <p>Choose an overlay and add the link as browser source in OBS.</p>
 
-<body>
-    <h1>(WIP) Overlays:</h1>
-    <p>This is a very basic implementation of web based OBS overlays. Still heavy wip. </p>
-    <p>Choose an overlay and add the link as browser source in OBS.</p>
+        <a href="/basic/index.html">
+            <p>Basic Overlay</p>
+            <img src="https://pek.li/im6tjb.png" alt="" width="500px" />
+        </a>
 
-    <a href="/basic/index.html">
-      <p>Basic Overlay</p>
-      <img src="https://pek.li/im6tjb.png" alt="" width="500px" />
-    </a>
+        <a href="/confettimilestone/index.html">
+            <p>Confetti on billions milestone</p>
+        </a>
 
-    <a href="/confettimilestone/index.html">
-      <p>Confetti on billions milestone</p>
-    </a>
+        <a href="/confetti/index.html">
+            <p>Confetti on every score gain</p>
+        </a>
 
-    <a href="/confetti/index.html">
-      <p>Confetti on every score gain</p>
-    </a>
-    
-</body>
+        <h1>Overlay based on files</h1>
+        <label for="files">Choose your text file:</label>
+        <select id="files"></select>
+        <button id="confirm_button">Confirm File</button>
+
+        <script src="index.js"></script>
+    </body>
 </html>
